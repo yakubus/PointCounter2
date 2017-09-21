@@ -1,5 +1,6 @@
 package yakubus.pl.pointcounter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,8 +18,16 @@ public class CounterActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    public void click(View view) {
+            switch (view.getId()) {
+                case R.id.StartButton:
+                    Intent intent = new Intent(CounterActivity.this, PlayCounterActivity.class);
+                    startActivity(intent);
+                    break;
+            }
+
+    }
 }

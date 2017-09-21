@@ -24,6 +24,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="yakubus.pl.pointcounter.MainActivity" />
         </activity>
+        <activity android:name=".PlayCounterActivity"></activity>
     </application>
 
 </manifest>
