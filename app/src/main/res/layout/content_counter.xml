@@ -104,15 +104,16 @@
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player1editText"
-        android:layout_alignTop="@+id/Player1textView"
-        android:layout_alignParentEnd="true"
-        android:textSize="10pt" />
+        android:textSize="10pt"
+        android:layout_above="@+id/Player2editText"
+        android:layout_toEndOf="@+id/Player1textView"
+        android:layout_marginStart="39dp" />
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player2editText"
         android:textSize="10pt"
         android:layout_above="@+id/Player3textView"
@@ -121,50 +122,50 @@
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player3editText"
         android:textSize="10pt"
-        android:layout_alignTop="@+id/Player3textView"
+        android:layout_below="@+id/Player2textView"
         android:layout_alignStart="@+id/Player2editText" />
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player4editText"
         android:textSize="10pt"
-        android:layout_alignTop="@+id/Player4textView"
+        android:layout_alignBottom="@+id/Player4textView"
         android:layout_alignStart="@+id/Player3editText" />
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player5editText"
         android:textSize="10pt"
-        android:layout_above="@+id/Player6textView"
+        android:layout_alignBottom="@+id/Player5textView4"
         android:layout_alignStart="@+id/Player4editText" />
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player6editText"
         android:textSize="10pt"
-        android:layout_alignTop="@+id/Player6textView"
+        android:layout_alignBottom="@+id/Player6textView"
         android:layout_alignStart="@+id/Player5editText" />
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player7editText"
         android:textSize="10pt"
-        android:layout_alignTop="@+id/Player7textView6"
+        android:layout_alignBottom="@+id/Player7textView6"
         android:layout_alignStart="@+id/Player6editText" />
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="15pt"
+        android:layout_height="wrap_content"
         android:id="@+id/Player8editText2"
         android:textSize="10pt"
-        android:layout_alignTop="@+id/Player8textView2"
+        android:layout_alignBottom="@+id/Player8textView2"
         android:layout_alignStart="@+id/Player7editText" />
 
     <Button
