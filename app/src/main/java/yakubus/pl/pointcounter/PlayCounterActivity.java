@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class PlayCounterActivity extends AppCompatActivity {
+
+
     TextView textViewPoint1;
     TextView textViewPoint2;
     TextView textViewPoint3;
@@ -15,6 +17,7 @@ public class PlayCounterActivity extends AppCompatActivity {
     TextView textViewPoint6;
     TextView textViewPoint7;
     TextView textViewPoint8;
+
 
     EditText editTextAddPoint1;
     EditText editTextAddPoint2;
@@ -46,6 +49,7 @@ public class PlayCounterActivity extends AppCompatActivity {
         editTextAddPoint6 = (EditText)findViewById(R.id.AddPoint6editText);
         editTextAddPoint7 = (EditText)findViewById(R.id.AddPoint7editText);
         editTextAddPoint8 = (EditText)findViewById(R.id.AddPoint8editText);
+
 
     }
 
@@ -81,25 +85,25 @@ public class PlayCounterActivity extends AppCompatActivity {
                 textViewPoint1.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
                 break;
             case R.id.Minus2button:
-                textViewPoint2.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
+                textViewPoint2.setText(Integer.toString(Integer.parseInt(textViewPoint2.getText().toString()) - 1));
                 break;
             case R.id.Minus3button:
-                textViewPoint3.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
+                textViewPoint3.setText(Integer.toString(Integer.parseInt(textViewPoint3.getText().toString()) - 1));
                 break;
             case R.id.Minus4button:
-                textViewPoint4.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
+                textViewPoint4.setText(Integer.toString(Integer.parseInt(textViewPoint4.getText().toString()) - 1));
                 break;
             case R.id.Minus5button:
-                textViewPoint5.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
+                textViewPoint5.setText(Integer.toString(Integer.parseInt(textViewPoint5.getText().toString()) - 1));
                 break;
             case R.id.Minus6button:
-                textViewPoint6.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
+                textViewPoint6.setText(Integer.toString(Integer.parseInt(textViewPoint6.getText().toString()) - 1));
                 break;
             case R.id.Minus7button:
-                textViewPoint7.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
+                textViewPoint7.setText(Integer.toString(Integer.parseInt(textViewPoint7.getText().toString()) - 1));
                 break;
             case R.id.Minus8button:
-                textViewPoint8.setText(Integer.toString(Integer.parseInt(textViewPoint1.getText().toString()) - 1));
+                textViewPoint8.setText(Integer.toString(Integer.parseInt(textViewPoint8.getText().toString()) - 1));
                 break;
             // Clicked add point
             case R.id.Add1button:

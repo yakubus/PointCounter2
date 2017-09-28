@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class CounterActivity extends AppCompatActivity {
+    int iloscGraczy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +17,10 @@ public class CounterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_counter);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Intent intent = new Intent(CounterActivity.this, MainActivity.class);
+        Bundle extras = intent.getExtras();
+        iloscGraczy = intent.getIntExtra("iloscGraczy");
     }
 
     public void click(View view) {
